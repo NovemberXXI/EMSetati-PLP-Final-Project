@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =======Header Start======= */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    background: rgba(231, 189, 72, 0.838);
+    height: 50px;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: larger;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+
+.nav-links>ul {
+    display: flex;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 10px;
+    font-weight: 400;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    flex-direction: column;
+    top: 100px;
+    color: black;
+    gap: 4px;
+}
+
+.humburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: black;
+    border-radius: 1000px;
+}
+
+/* =======Header End======= */
+
+/* ====sign up==== */
+
+.sign-up {
+    background: rgba(231, 189, 72, 0.838);
+    border-radius: 20px;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 150px auto;
+    height: 40vh;
+}
+
+
+.email {
+    width: 60vw;
+    /* display: flex; */
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+}
+
+.password {
+    width: 60vw;
+    /* display: flex; */
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+}
+
+.sign-up-btn {
+    width: 50vw;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+}
+
+.txt {
+    width: 60vw;
+    margin: auto;
+}
+
+.create-btn {
+    width: 50vw;
+    display: flex;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+}
+
+/* ====sign up==== */
+
+/* ====Create Account==== */
+
+.create-account {
+    display: none;
+    background: rgba(231, 189, 72, 0.838);
+    border-radius: 20px;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 80px auto;
+    height: 40vh;
+}
+
+.create-acct-btn {
+    width: 50vw;
+    /* display: flex; */
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+}
+
+/* ====footer==== */
+
+.footer {
+    height: 50px;
+    text-align: center;
+    background: rgba(231, 189, 72, 0.838);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.footer>p {
+    margin-bottom: 0;
+}
+
+.footer>p>a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+
+/* ====footer==== */
+
+
+/* ==compatability== */
+
+@media screen and (min-width:800px) {
+    .nav-links {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .nav-links>a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .humburger {
+        display: none;
+    }
+}
